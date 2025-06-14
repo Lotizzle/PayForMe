@@ -29,7 +29,7 @@ To run PayForMe locally, follow these steps:
 1. Clone the repository:
 ```
 git clone https://github.com/yourusername/PayForMe.git
-cd PayForMeC
+cd PayForMe
 ```
 2. Create and activate a virtual environment:
 ```
