@@ -4,6 +4,7 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import './AboutPage.css';
 import { Link } from 'react-router-dom';
 import Footer from '../components/layout/Footer';
+import heroImage from '../assets/image.png'; // Import the image
 // import StatsIcon from './StatsSection';
 
 const AboutUs = () => {
@@ -36,11 +37,21 @@ const AboutUs = () => {
     }
   ];
 
+  // Inline style for hero section with imported image
+  const heroStyle = {
+    background: `linear-gradient(135deg, rgba(0, 51, 102, 0.7) 0%, rgba(0, 102, 204, 0.7) 100%), url(${heroImage}) center/cover no-repeat`,
+    padding: '200px 0',
+    color: 'white',
+    marginBottom: '40px',
+    minHeight: '500px',
+    textAlign: 'center'
+  };
+
   return (
     <>
     <div className="about-page">
       {/* Hero Section */}
-      <div className="hero-section">
+      <div className="hero-section" style={heroStyle}>
         <Container>
           <Row className="justify-content-center text-center">
             <Col md={8}>
@@ -56,7 +67,6 @@ const AboutUs = () => {
           </Row>
         </Container>
       </div>
-
 
       {/* Stats Section */}
       <Container className="section-padding">
