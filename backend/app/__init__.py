@@ -58,7 +58,7 @@ def create_app():
         with app.app_context():
             app.redis_client = get_redis_client()
 
-        cache.init_app(app)
+        cache.init_app(app) 
 
         db.init_app(app)
         migrate.init_app(app, db)
