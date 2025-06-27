@@ -1,4 +1,3 @@
-# railway.toml (Updated)
 [build]
 builder = "NIXPACKS"
 nixpacksConfigPath = "nixpacks.toml"

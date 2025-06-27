@@ -1,5 +1,3 @@
-# Add these updates to your config.py
-
 import os
 from dotenv import load_dotenv
 from pathlib import Path
@@ -21,18 +19,18 @@ class Config:
     FRONTEND_SUCCESS_URL = f'{FRONTEND_URL}/donation/success'
     FRONTEND_CANCEL_URL = f'{FRONTEND_URL}/donation/cancel'
     
-    # Base upload folder - Updated for Railway
-    UPLOAD_FOLDERS = os.path.abspath(os.path.join(os.getcwd(), 'uploads'))
+    # Base upload folder - Use /tmp for Railway (ephemeral storage)
+    UPLOAD_FOLDERS = os.path.join('/tmp', 'uploads')
     
     # Update this to your Railway app URL
     UPLOADS_DEFAULT_URL = os.getenv('UPLOADS_DEFAULT_URL', 'https://your-app.railway.app/uploads/')
-    MAX_CONTENT_LENGTH = int(os.getenv('MAX_CONTENT_LENGTH', 100 * 1024 * 1024))
+    MAX_CONTENT_LENGTH = int(os.getenv('MAX_CONTENT_LENGTH', 16 * 1024 * 1024))  # 16MB default
     ALLOWED_EXTENSIONS = set(os.getenv('ALLOWED_EXTENSIONS', 'png,jpg,jpeg,gif').split(','))
     ALLOWED_VIDEO_EXTENSIONS = set(os.getenv('ALLOWED_VIDEO_EXTENSIONS', 'mp4,avi,mov').split(','))
     
-    # Specific upload destinations
-    UPLOADED_PHOTOS_DEST = os.path.abspath(os.path.join(UPLOAD_FOLDERS, 'photos'))
-    UPLOADED_VIDEOS_DEST = os.path.abspath(os.path.join(UPLOAD_FOLDERS, 'videos'))
+    # Specific upload destinations - Use /tmp for Railway
+    UPLOADED_PHOTOS_DEST = os.path.join('/tmp', 'uploads', 'photos')
+    UPLOADED_VIDEOS_DEST = os.path.join('/tmp', 'uploads', 'videos')
     
     FIRST_ADMIN_SECRET_KEY = os.environ.get('FIRST_ADMIN_SECRET_KEY')
     
@@ -44,7 +42,7 @@ class Config:
         seconds=int(os.environ.get('JWT_REFRESH_TOKEN_EXPIRES', 2592000))
     )
     
-    # Redis configuration - Updated for Railway
+    # Redis configuration - Railway format
     REDIS_URL = os.getenv('REDIS_URL', 'redis://localhost:6379/0')
     
     # Configure Flask-Caching with Redis
@@ -54,8 +52,8 @@ class Config:
     # Stripe configuration
     STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
     STRIPE_WEBHOOK_SECRET = os.getenv('STRIPE_WEBHOOK_SECRET')
-    STRIPE_LOGGING = os.getenv('STRIPE_LOGGING', False)
+    STRIPE_LOGGING = os.getenv('STRIPE_LOGGING', 'False').lower() == 'true'
     STRIPE_CONNECT_WEBHOOK_SECRET = os.getenv('STRIPE_CONNECT_WEBHOOK_SECRET')
     
     # Platform fee configuration
-    PLATFORM_FEE_PERCENTAGE = os.getenv('PLATFORM_FEE_PERCENTAGE', '5')
+    PLATFORM_FEE_PERCENTAGE = float(os.getenv('PLATFORM_FEE_PERCENTAGE', '5'))
