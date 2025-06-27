@@ -1,7 +1,7 @@
 // StatsSection.js
 import React, { useEffect, useRef } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import './StatsSection.css';
+// import './StatsSection.css';
 
 const StatsIcon = () => {
   const stats = [

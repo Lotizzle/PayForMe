@@ -1,10 +1,7 @@
-/* MyProjectsPage.css */
 .my-projects-page {
   min-height: 80vh;
 }
 
-
-/* Styles for revoked projects */
 .revoked-project {
   opacity: 0.85;
   border: 1px solid #dc3545;
@@ -60,7 +57,6 @@
   margin-right: 4px;
 }
 
-/* Make tooltip text more readable */
 .tooltip-inner {
   max-width: 250px;
   padding: 8px 12px;
@@ -68,7 +64,6 @@
   line-height: 1.4;
   text-align: left;
 }
-/* Header section */
 .header-section {
   display: flex;
   justify-content: space-between;
@@ -100,7 +95,6 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Project tabs */
 .project-tabs {
   margin-bottom: 2rem;
   border-bottom: 1px solid #dee2e6;
@@ -119,7 +113,6 @@
   border-bottom: 2px solid #0d6efd;
 }
 
-/* Project card */
 .project-card {
   border: none;
   transition: all 0.3s ease;
@@ -200,7 +193,6 @@
   -webkit-box-orient: vertical;
 }
 
-/* Funding progress */
 .funding-progress {
   margin-bottom: 1rem;
 }
@@ -239,7 +231,6 @@
   color: #0d6efd;
 }
 
-/* Project meta */
 .project-meta {
   display: flex;
   justify-content: space-between;
@@ -268,7 +259,6 @@
   font-style: italic;
 }
 
-/* Card footer */
 .card-footer-content {
   display: flex;
   justify-content: space-between;
@@ -290,7 +280,6 @@
   border-radius: 4px;
 }
 
-/* Empty state */
 .empty-state {
   padding: 4rem 2rem;
   border-radius: 8px;
@@ -303,13 +292,11 @@
   display: block;
 }
 
-/* Loading spinner */
 .spinner-border {
   width: 3rem;
   height: 3rem;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .header-section {
     flex-direction: column;

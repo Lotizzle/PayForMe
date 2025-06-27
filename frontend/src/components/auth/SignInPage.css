@@ -167,7 +167,6 @@
   margin-top: 0.5rem;
 }
 
-/* Responsive adjustments */
 @media (max-width: 576px) {
   .signin-form {
     padding: 1.75rem;

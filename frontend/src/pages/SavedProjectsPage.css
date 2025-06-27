@@ -30,7 +30,7 @@
   
   .saved-projects-page .project-image-container {
     position: relative;
-    height: 180px;  /* Reduced height */
+    height: 180px;
     overflow: hidden;
   }
   
@@ -58,18 +58,18 @@
     display: inline-block;
     font-size: 0.75rem;
     color: #6c757d;
-    margin-bottom: 0.25rem;  /* Reduced */
+    margin-bottom: 0.25rem;
     background-color: #f8f9fa;
-    padding: 0.2rem 0.5rem;  /* Reduced */
+    padding: 0.2rem 0.5rem;
     border-radius: 30px;
   }
   
   .saved-projects-page .project-title {
-    font-size: 1.1rem;  /* Reduced */
+    font-size: 1.1rem;
     font-weight: 600;
-    margin-bottom: 0.35rem;  /* Reduced */
+    margin-bottom: 0.35rem;
     line-height: 1.3;
-    min-height: 2.6rem;  /* Reduced */
+    min-height: 2.6rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -78,23 +78,23 @@
   
   .saved-projects-page .project-brief {
     color: #6c757d;
-    font-size: 0.85rem;  /* Reduced */
-    margin-bottom: 0.65rem;  /* Reduced */
+    font-size: 0.85rem;
+    margin-bottom: 0.65rem;
     display: -webkit-box;
-    -webkit-line-clamp: 2;  /* Reduced from 3 to 2 */
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    min-height: 2.5rem;  /* Reduced */
+    min-height: 2.5rem;
   }
   
   .saved-projects-page .funding-progress {
-    margin-bottom: 0.75rem;  /* Reduced */
+    margin-bottom: 0.75rem;
   }
   
   .saved-projects-page .progress {
-    height: 5px;  /* Reduced */
+    height: 5px;
     border-radius: 3px;
-    margin-bottom: 0.3rem;  /* Reduced */
+    margin-bottom: 0.3rem;
     background-color: #e9ecef;
   }
   
@@ -107,11 +107,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.85rem;  /* Reduced */
+    font-size: 0.85rem;
   }
   
   .saved-projects-page .funding-label {
-    font-size: 0.75rem;  /* Reduced */
+    font-size: 0.75rem;
     color: #6c757d;
     margin-left: 0.25rem;
   }
@@ -123,20 +123,20 @@
   .saved-projects-page .project-meta {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.4rem;  /* Reduced */
+    margin-bottom: 0.4rem;
   }
   
   .saved-projects-page .meta-item {
     display: flex;
     align-items: center;
-    gap: 0.25rem;  /* Reduced */
-    font-size: 0.8rem;  /* Reduced */
+    gap: 0.25rem;
+    font-size: 0.8rem;
     color: #6c757d;
   }
   
   .saved-projects-page .meta-item i,
   .saved-projects-page .meta-item .bi {
-    font-size: 0.9rem;  /* Reduced */
+    font-size: 0.9rem;
   }
   
   .saved-projects-page .card-footer-content {
@@ -146,7 +146,7 @@
   }
   
   .saved-projects-page .last-updated {
-    font-size: 0.75rem;  /* Reduced */
+    font-size: 0.75rem;
   }
   
   .saved-projects-page .action-buttons {

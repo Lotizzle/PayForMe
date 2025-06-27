@@ -1,7 +1,6 @@
-/* AboutPayForMeSection.css */
 .about-payforme-section {
-  background-color: #00264d; /* Deep blue background */
-  color: #ffffff; /* White text color for contrast */
+  background-color: #00264d;
+  color: #ffffff;
   padding: 80px 0;
   overflow: hidden;
 }
@@ -53,7 +52,7 @@
 }
 
 .about-payforme-section .learn-more-link:hover {
-  color: #ffcc00; /* Yellow hover state */
+  color: #ffcc00;
 }
 
 .about-payforme-section .image-container {
@@ -78,7 +77,6 @@
   transform: scale(1.05);
 }
 
-/* Media Queries for Responsive Design */
 @media (min-width: 992px) {
   .about-payforme-section .col-lg-7 {
     width: 58.333333%;

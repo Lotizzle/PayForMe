@@ -1,9 +1,8 @@
-/* Footer.css */
 .footer {
-    background-color: #ffffff; /* White background */
-    color: #333333; /* Dark text color for contrast */
+    background-color: #ffffff;
+    color: #333333;
     padding: 40px 0;
-    border-top: 1px solid #e0e0e0; /* Light gray border at the top */
+    border-top: 1px solid #e0e0e0;
   }
   
   .footer-content {
@@ -24,7 +23,7 @@
   .footer-section h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #003366; /* Deep blue for headings */
+    color: #003366;
   }
   
   .footer-section ul {
@@ -37,7 +36,7 @@
   }
   
   .footer-section a {
-    color: #003366; /* Deep blue links */
+    color: #003366;
     text-decoration: none;
   }
   
@@ -48,7 +47,7 @@
   .footer-bottom {
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid #e0e0e0; /* Light gray border at the top */
+    border-top: 1px solid #e0e0e0;
   }
   
   .footer-bottom p {
@@ -56,7 +55,7 @@
   }
   
   .footer-bottom a {
-    color: #003366; /* Deep blue for app store links */
+    color: #003366;
     text-decoration: none;
   }
   
