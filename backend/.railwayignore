@@ -1,0 +1,21 @@
+# .railwayignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.local
+.venv/
+venv/
+node_modules/
+.git/
+.gitignore
+README.md
+.DS_Store
+*.log
+uploads/
+instance/
+migrations/versions/
+.pytest_cache/
+.coverage
+htmlcov/

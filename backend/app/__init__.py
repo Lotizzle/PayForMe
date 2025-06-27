@@ -71,11 +71,15 @@ def create_app():
 
         CORS(app, supports_credentials=True, resources={
             r"/api/*": {
-                "origins": ["http://localhost:3000"],  # Add your frontend URL
+                "origins": [
+                    "http://localhost:3000",  # Development
+                    "https://your-frontend-domain.com",  # Production frontend
+                    os.environ.get('FRONTEND_URL', 'http://localhost:3000')  # Dynamic from env
+                ],
                 "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
                 "allow_headers": ["Content-Type", "Authorization"],
                 "expose_headers": ["Content-Type", "Authorization"],
-                "max_age": 600  # Cache preflight requests for 10 minutes
+                "max_age": 600
             }
         })
         # auth-related routes
