@@ -1,4 +1,3 @@
-/* PayForMeSection.css */
 .payforme-section {
   background-color: #003366;
   color: #ffffff;
@@ -53,7 +52,6 @@
   transform: scale(1.03);
 }
 
-/* Media Queries for responsive layout */
 @media (min-width: 992px) {
   .payforme-container {
     flex-direction: row;
@@ -70,7 +68,6 @@
   }
 }
 
-/* Mobile adjustments */
 @media (max-width: 767px) {
   .payforme-section {
     padding: 60px 0;

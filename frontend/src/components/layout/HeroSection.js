@@ -3,6 +3,8 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import './HeroSection.css';
+// Import the hero image - make sure this path points to your actual image
+import heroImage from '../../assets/heroimage.jpg';
 
 function HeroSection() {
   const { isAuthenticated } = useAuth();
@@ -22,7 +24,15 @@ function HeroSection() {
 
   return (
     <section className="hero-section1">
-      <div className="hero-background"></div>
+      <div 
+        className="hero-background"
+        style={{
+          backgroundImage: `url(${heroImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      ></div>
       <Container>
         <Row className="align-items-center">
           <Col md={8} className="mx-auto">

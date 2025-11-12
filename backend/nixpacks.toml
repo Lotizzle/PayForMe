@@ -1,0 +1,13 @@
+providers = ["python"]
+
+[phases.setup]
+nixPkgs = ["python311", "python311Packages.pip", "python311Packages.setuptools"]
+
+[phases.install]
+cmd = "pip install --upgrade pip && pip install -r requirements.txt"
+
+[phases.build]
+cmd = "flask db upgrade || echo 'No migrations to run'"
+
+[start]
+cmd = "gunicorn run:app --bind 0.0.0.0:$PORT --workers 1 --timeout 120 --log-level info"
